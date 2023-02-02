@@ -1,0 +1,15 @@
+site_name: FAST Data Integrity
+docs_dir: source
+
+nav:
+  - Home: 'index.md'
+  - Data Quality: 'data_quality.md'
+  - Data Mapping: 'data_mapping.md'
+theme: readthedocs
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+          python:
+            paths: [../src/fastDataIntegrity]
