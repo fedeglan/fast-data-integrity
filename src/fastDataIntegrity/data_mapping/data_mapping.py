@@ -31,8 +31,8 @@ def integrity_check(source, output, id_col,
         dict: dictionary containing matches, source mismatches and output mismatches.
     """
     # Check type of df1 and df2
-    df1 = get_correct_type(df1)
-    df2 = get_correct_type(df2)
+    df1 = get_correct_type(source)
+    df2 = get_correct_type(output)
 
     # Check var type of id_col
     if isinstance(id_col, list):
